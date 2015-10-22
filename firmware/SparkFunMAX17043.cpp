@@ -199,7 +199,7 @@ uint16_t MAX17043::getConfigRegister()
 
 uint8_t MAX17043::setCompensation(uint8_t newCompensation)
 {
-  // The CONFIG register compensates the ModelGauge algorith. The upper 8 bits
+  // The CONFIG register compensates the ModelGauge algorithm. The upper 8 bits
   // of the 16-bit register control the compensation.
   // Read the original configReg, so we can leave the lower 8 bits alone:
   uint16_t configReg = read16(MAX17043_CONFIG);
