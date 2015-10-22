@@ -39,8 +39,8 @@ void setup()
 
 	// Set up Spark variables (voltage, soc, and alert):
 	Particle.variable("voltage", voltage);
-	Particle.variable("soc", soc);
-	Particle.variable("alert", alert);
+	Spark.variable("soc", soc);
+	Spark.variable("alert", alert);
 	// To read the values from a browser, go to:
 	// http://api.particle.io/v1/devices/{DEVICE_ID}/{VARIABLE}?access_token={ACCESS_TOKEN}
 
